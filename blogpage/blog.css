@@ -1,0 +1,261 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+    height: 12px; /* Adjust the height of the horizontal scrollbar, if present */
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+body h1 h2 {
+    animation: rgbAnimation 5s infinite;
+}
+
+/* Header Styling */
+header {
+    background-color: #1F1F1F;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-20px);
+    animation: slideIn 1s forwards;
+}
+
+header h1 {
+    margin: 50px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ff0000;
+    animation: rgbAnimation 5s infinite;
+}
+
+/* Navigation Styling */
+body nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(-20px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.2s;
+    margin-bottom: 20px;
+    animation: rgbAnimation 5s infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    animation: rgbAnimation 5s infinite;
+}
+
+nav ul li a:hover {
+    text-decoration: underline purple;
+    text-shadow: 1px 1px #ff0000;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.4s;
+}
+
+main article {
+    background-color: #1F1F1F;
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.6s;
+}
+
+main article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom effect */
+}
+
+main article:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+main article h2 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px #d935c3;
+    animation: rgbAnimation 5s infinite;
+    margin: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+    animation-delay: 0.8s;
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+    animation: rgbAnimation 5s infinite;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rgbAnimation {
+    0% {
+        color: #d13838;
+    }
+    33% {
+        color: #5cd55c;
+    }
+    66% {
+        color: #4646c6;
+    }
+    100% {
+        color: #d13838;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        justify-content: center;
+    }
+    main article {
+        flex: 1 1 100%;
+    }
+}
+
+/* Logo Styling */
+.python-logo-container,
+.html-logo-container,
+.js-logo-container,
+.git-logo-container,
+.css-logo-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.python-logo-container {
+    top: 40px;
+    right: 340px;
+}
+
+.html-logo-container {
+    top: 40px;
+    left: 300px;
+}
+
+.js-logo-container {
+    top: 50px;
+    left: 110px;
+}
+
+.git-logo-container {
+    top: 10px;
+    right: 200px;
+}
+
+.css-logo-container {
+    top: 30px;
+    right: 30px;
+}
+
+.python-logo,
+.html-logo,
+.js-logo,
+.git-logo,
+.css-logo {
+    width: 100%;
+    height: 100%;
+    animation: spin linear infinite;
+}
+
+.python-logo {
+    animation-duration: 10s;
+}
+
+.html-logo {
+    animation-duration: 5s;
+}
+
+.js-logo {
+    animation-duration: 8s;
+}
+
+.git-logo {
+    animation-duration: 6s;
+}
+
+.css-logo {
+    animation-duration: 7s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
