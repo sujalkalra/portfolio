@@ -1,0 +1,235 @@
+/* Reset and General Styles */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrollbar on body */
+}
+
+h2{
+    padding: 10px;
+    margin: 10px;
+}
+/* Smooth transition for text elements */
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(50px); /* Start position for slide-in effect */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.loaded .fade-in-text {
+    opacity: 1;
+    transform: translateY(0); /* End position for slide-in effect */
+}
+
+/* Typography */
+h1, h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px purple;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Layout and Structure */
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 125px;
+    z-index: 1;
+}
+
+/* Skills Container */
+.skills-container {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    transform-origin: center;
+}
+
+/* Skill Icons */
+.skill {
+    position: absolute;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill i {
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: inherit;
+}
+
+.skill i:hover {
+    transform: scale(1.2);
+}
+
+/* Skill Highlight */
+pre {
+    font-size: large;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 8px;
+}
+
+/* Styling for span tags in Skill Highlight */
+pre span {
+    text-decoration: underline;
+}
+
+/* Color styles for each span in Skill Highlight */
+pre span.python {
+    color: rgb(74, 74, 207);
+}
+
+pre span.html {
+    color: orange;
+}
+
+pre span.css {
+    color: cyan;
+}
+
+pre span.javascript {
+    color: yellow;
+}
+
+pre span.git {
+    color: orange;
+}
+
+pre span.react {
+    color: aqua;
+}
+
+pre span.nextjs {
+    color: brown;
+}
+
+pre span.leetcode {
+    color: gold;
+}
+
+pre span.system-design {
+    color: coral;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+    height: 12px; /* Adjust the height of the horizontal scrollbar, if present */
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .skills-container {
+        top: 60%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills-container img {
+        top: 50%;
+        right: 5%;
+    }
+
+    pre {
+        font-size: medium;
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .skills-container {
+        top: 60%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-img {
+        top: 50%;
+        right: 5%;
+        position: static;
+    }
+
+    pre {
+        font-size: medium;
+        padding: 15px;
+        text-align: center;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .skills-container {
+        top: 100%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-img {
+        top: 60%;
+        right: 50%;
+        position: static;
+    }
+
+    pre {
+        font-size: small;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
