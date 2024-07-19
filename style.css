@@ -2,8 +2,8 @@
 
 
 ::-webkit-scrollbar {
-    width: 12px; /* Adjust the width of the scrollbar */
-    height: 12px; /* Adjust the height of the horizontal scrollbar, if present */
+    width: 4px; /* Adjust the width of the scrollbar */
+    height: 4px; /* Adjust the height of the horizontal scrollbar, if present */
 }
 
 * {
