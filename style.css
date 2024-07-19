@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-::-webkit-scrollbar {
-    width: 4px; /* Adjust the width of the scrollbar */
-    height: 4px; /* Adjust the height of the horizontal scrollbar, if present */
-}
+
 
 * {
     margin: 0;
