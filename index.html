@@ -3,106 +3,291 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sujal Kalra's portfolio showcasing web development, system design, and software development projects.">
+    <title>|| SUJAL KALRA || Portfolio ||</title>
+
+    <!-- tab icon -->
+    <link rel="icon" href="images/me.ico">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
-    <title>Sujal Kalra's Portfolio</title>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <a href="#" class="logo">Sujal Kalra</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><i class='bx bx-moon' id="darkmode"></i></li>
-            </ul>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">SUJI.PORTFOLIO</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Hi, I'm Sujal Kalra</h1>
-        <p>A passionate developer and problem solver</p>
-        <img src="images/home.png" alt="Home Image" loading="lazy">
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>SUJAL KALRA</h1>
+            <p>
+                I'm a Computer Science Engineer and Web Developer who loves to Fix Bugs and develop software systems
+                for people who want to make a difference in the world.
+            </p>
+            <p>Currently I'm a student of The Vellore Institute of Technology , where I'm learning how to
+            create beautiful and functional websites using HTML, CSS, JavaScript, and WordPress.</p>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/compilersuji/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/sujalkalra/"><i class='bx bxl-github' ></i></a>
+                <a href="https://youtube.com/@twopointers123?si=1KB0Td13J7NnXqer"><i class='bx bxl-youtube' ></i></i></a>
+                <a href="https://www.linkedin.com/in/sujal-kalra-660190252/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="sujal.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bxl-youtube'></i>
+                    <h3>Youtuber</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxl-python'></i>
+                    <h3>programmer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-music'></i>
+                    <h3>Flute artist</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated individual with a passion for web development, system design, and software engineering. I thrive on solving complex problems and turning ideas into reality.</p>
-        <img src="images/about.png" alt="About Me" loading="lazy">
-    </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>My Services</h2>
-        <div class="service">
-            <i class='bx bx-code-alt' style='color:#754ef9'></i>
-            <h3>Web Development</h3>
-            <p>I am proficient in technologies like HTML5, CSS (Tailwind), JavaScript, React.js, and Next.js. I have utilized these technologies to create various projects, including static and dynamic websites.</p>
-        </div>
-        <div class="service">
-            <i class='bx bxs-server' style='color:#754ef9'></i>
-            <h3>System Design</h3>
-            <p>Designing robust and scalable system architectures tailored to meet client needs and handling high availability challenges is my forte.</p>
-        </div>
-        <div class="service">
-            <i class='bx bxs-cube-alt' style='color:#754ef9'></i>
-            <h3>Software Development</h3>
-            <p>From ideation to deployment, I build reliable and efficient software applications using modern methodologies and technologies.</p>
-        </div>
-    </section>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Sujal,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code 🧑🏼‍💻!
+            </h3>
+            <p>
+                This website is my personal blog where I write about Problem solving
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better.
+                If you'd like to read more of my posts, learn about my incredible
+                teaching skills, and explore my dynamic personality, subscribe and
+                follow me on social media.
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <img src="images/project1.png" alt="Project 1" loading="lazy">
-            <h3>Project One</h3>
-            <p>A brief description of the first project goes here.</p>
-        </div>
-        <div class="project">
-            <img src="images/project2.png" alt="Project 2" loading="lazy">
-            <h3>Project Two</h3>
-            <p>A brief description of the second project goes here.</p>
-        </div>
-        <div class="project">
-            <img src="images/comingsoon.png" alt="Coming Soon" loading="lazy">
-            <h3>More Projects Coming Soon</h3>
+                I regularly inspire and teach people about coding and various skills
+                through weekly updates on software development trends and tips. If you 
+                have any feedback or suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="blogpage/blog.html" class="btn">My Blogs</a>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>i know the technologies like HTML5 ,css(TailWind) ,JavaScript ,React.js & Next.js .
+                i used these technologies and made a lots of projects including (Blogs) Static and functional websites.</p>
+                <a href="softwareskill/index.html" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-server' style='color:#754ef9'  ></i>
+                <h3>System Design</h3>
+                <p>i have a quite good knowledge in feild of DataBase Management System and System Design,
+                and i know the data manipulating languages like MySQL , MongoDB as well as PL/SQL.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-git-branch' style='color:#754ef9'  ></i>                
+                <h3>Software Development</h3>
+                <p>i overachieved my problem solving skills using the high level programming languages like Python for Bug-fixing and Testing. i know Git/github for Version control.</p>
+                <a href="softwareskill/index.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
 
-            <button type="submit">Send</button>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/project1.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Script.Clock</h4>
+                    <p>Time Inside The Script code : i hope you are a good coder.</p>
+                    <a href="https://sujalkalra.github.io/js-clock/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/project2.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Cube.Ninja</h4>
+                    <p>now its a basic game for Just time-pass which might inspire you to become Hokage.</p>
+                    <a href="https://sujalkalra.github.io/CubeNinja/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/project3.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>To-Do</h4>
+                    <p>don't you dare forgot her birthday and plans you have to do : take my Todo APP.</p>
+                    <a href="https://sujalkalra.github.io/TODOLIST/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/comingsoon.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>!!Alert!!</h4>
+                    <p>Something Extra Ordinary is coming.</p>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/comingsoon.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>sorry !!</h4>
+                    <p>Sorry for that , here it is you can check.</p>
+                    <a href="https://www.youtube.com/watch?v=LgncSiSnIyI" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/comingsoon.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Trust Me !!</h4>
+                    <p>Trust Me forgiveness is a symbol of a Wise person , Trust Me 😄, suprise.</p>
+                    <a href="https://www.youtube.com/watch?v=69pPYkGiEAQ" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/shiv.png" alt="shiv photo">
+                        <h3>Shiv Shlok</h3>
+                        <p>Shivshlok is not only my YouTube partner and good friend but also a major force in our 
+                            tech endeavors. As a Google full stack developer, he brings a wealth of knowledge and
+                            experience to our projects. His expertise in Python and its powerful libraries, such as
+                            Flask, Django, and TensorFlow, sets him apart as a true tech wizard. Beyond his technical
+                            skills, Shivshlok serves as my personal guide in the tech field, always ready to share his
+                            insights and help navigate the complexities of our work. His dedication and friendship make
+                            him an indispensable part of our team.</p>
+                    </div>
+                    
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/tanish.png" alt="tanish photo">
+                        <h3>Tanish Pandit</h3>
+                        <p>Tanish is my closest friend and an indispensable pillar of our team. His remarkable ability to 
+                            manage and guide us through challenges has been invaluable. As a brilliant management student 
+                            and a businessman, Tanish excels in a variety of fields, including business marketing, business 
+                            law, communication, product design, and development management. His skills not only support our 
+                            team but also drive us forward, ensuring that we stay on track and achieve our goals. Tanish's 
+                            dedication and expertise make him an essential part of our success.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="c06bb6f3f0915b365d242ec2132cda65" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sujal Kalra. All rights reserved.</p>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+        </div>
+        <!--buy me coffee added -->
+        
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kalrasujalm" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
-    <!-- JavaScript -->
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
     <script src="script.js"></script>
 </body>
-
 </html>
